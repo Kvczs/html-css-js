@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kacper Płaczek">
+    <title>Geoguessr ale to pogoda</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Geoguessr Pogoda</a></h1>
+    </header>
+    <nav>
+        <i class='fas fa-location-arrow'></i>
+        <input type="text" placeholder="Podaj lokację" class="search">
+        <button class="search-button"><i class="fas fa-search"></i></button>
+    </nav>
+    <main>
+        <div class="lang-select">
+            <div class="lang-pl">
+                <img class="select-pl" src="lang-pl.png" alt="">
+            </div>
+            <div class="lang-en">
+                <img class="select-en" src="lang-en.png" alt="">
+            </div>
+        </div>
+        <div class="date">
+            <div class="time" id="time">00:00</div>
+            <div class="date" id="date">Poniedziałek, 1 stycznia</div>
+        </div>
+        <div class="location"><i class='fas fa-location-arrow'></i> Nie podano lokacji!</div>
+        <div class="current-weather">
+            <div class="current-weather-location1"></div>
+            <p class="current-weather-location search-pl">Pogoda dla: brak lokacji</p>
+            <p class="current-weather-location search-en"></p>
+            <div class="weather-content">
+                <img class="weather-img">
+                <div class="temp-container">
+                    <span class="temp">-</span>
+                </div>
+                <div class="description"></div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy 2025 Geoguessr Pogoda</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
